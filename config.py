@@ -2,7 +2,7 @@ import pydantic
 from appium.options.android import UiAutomator2Options
 from typing import Literal, Optional
 
-from mobile_tests_lesson_13 import assist
+from mobile_tests_lesson_13 import utils
 
 EnvContext = Literal['personal', 'test', 'stage', 'prod']
 
@@ -72,7 +72,7 @@ class Settings(pydantic.BaseSettings):
         """
         asked_or_current = env or cls().context
         return cls(
-            _env_file=assist.file.abs_path_from_project(
+            _env_file=utils.file.abs_path_from_project(
                 f'config.{asked_or_current}.env'
             )
         )
