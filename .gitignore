@@ -5,8 +5,9 @@ __pycache__/
 .venv
 .python-version
 reports/
-config.personal.env
+config.real.env
 *.log
 demo
 browserstack_sample.py
 allure-results
+.DS_Store

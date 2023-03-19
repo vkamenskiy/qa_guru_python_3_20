@@ -1,1 +1,1 @@
-from . import file, python, selene, allure
+from . import python, selene, allure, browserstack, file
