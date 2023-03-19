@@ -6,6 +6,8 @@ __pycache__/
 .python-version
 reports/
 config.real.env
+config.browserstack.env
+config.emulation.env
 *.log
 demo
 browserstack_sample.py
